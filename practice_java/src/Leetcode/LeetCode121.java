@@ -4,7 +4,10 @@ class LeetCode121 {
     public static int maxProfit(int[] prices) {
         // find smallest element and its index
         // find largest element after smallest and its index
-       
+        // if largest element is before smallest element
+        // find the next largest element
+        // record index of that element
+        //
         int[] sorted = copyArray(prices);
         Arrays.sort(sorted);
         int largest = sorted[sorted.length - 1];
